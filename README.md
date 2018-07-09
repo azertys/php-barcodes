@@ -1,7 +1,18 @@
 php-barcodes
 ============
 
-This is a library to generates php barcodes
+This is a library to generate php barcodes. It is compatible with HL7 Barcode messages.
+
+
+# Example
+
+```php
+$d = new DNS2DBarcode;
+$d->save_path = '/temp/test'; //outputs temp/test.png
+$path = $d2->getBarcodePNGPath('HL7 message', 'pdf417,1', 6, 3);
+```
+
+
 
 2D-3D-Barcodes-Generator
 ========================
